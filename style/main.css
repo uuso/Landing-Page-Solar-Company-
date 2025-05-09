@@ -1,0 +1,352 @@
+/* Main CSS Style */
+
+/* CSS Variables */
+:root{
+    --persian-green:rgb(11, 149, 134);
+    --lime-green:rgb(132, 189, 58);
+    --white:white;
+    --amber:rgb(255, 187, 28);
+    --gray:rgb(71, 84, 103);
+    --transparent-black:#202020c8;
+    --white-creamy:rgb(255, 252, 244);
+    --Mint-cream:rgb(245, 251, 249);
+    --Cool-gray:rgb(146, 152, 159);
+    --Charcoal-blue:rgb(40, 54, 70);
+    --inter:"Inter", sans-serif;
+}
+
+
+/* Normalization */
+*{  
+    box-sizing: border-box;
+}  
+body{
+    margin: 0;
+}
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+::placeholder{
+    color: var(--Cool-gray);
+}
+
+/* Sizing */
+.w-full{
+    width: 100%;
+}
+.w-60{
+    width: 60%;
+}
+.w-50{
+    width: 50%;
+}
+.w-40{
+    width: 40%;
+}
+.w-33{
+    width: 33%;
+}
+.w-12r{
+    width: 12rem;
+}
+.w-10r{
+    width: 10rem;
+}
+.w-8r{
+    width: 8rem;
+}
+.w-5r{
+    width: 5rem;
+}
+.w-4r{
+    width: 4rem;
+}
+.w-3r{
+    width: 3rem;
+}
+.h-full{
+    height: 100%;
+}
+.h-min-65{
+    min-height: 65vh;
+}
+.h-3r{
+    height: 3rem;
+}
+
+/* Spacing */
+.py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-2{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.py-3{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.py-5{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.px-1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.px-2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.px-3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.pt-1{
+    padding-top: 1rem;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+.mb-2{
+    margin-bottom: 2rem;
+}
+
+/* Layout */
+.container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-col-reverse{
+    flex-direction: column-reverse;
+}
+.flex-no-wrap{
+    flex-wrap: nowrap;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.justify-around{
+    justify-content: space-evenly;
+}
+.justify-center{
+    justify-content: center;
+}
+.item-center{
+    align-items: center;
+}
+.item-end{
+    align-items: flex-end;
+}
+.item-stretch{
+    align-items: stretch;
+}
+.item-self-center{
+    align-self: center;
+}
+.item-self-end{
+    align-self: self-end;
+}
+.relative{
+    position: relative;
+}
+.positioned-card{
+    position: absolute;
+    bottom: 1rem;
+    left: -3rem;
+}
+.absolute{
+    position: absolute;
+}
+.bottom-0{
+    bottom: 0;
+}
+.end-0{
+    right: 0;
+}
+.bottom-1{
+    bottom: 1rem;
+}
+.object-cover{
+    object-fit: cover;
+}
+
+
+/* Gap */
+.justify-between{
+    justify-content: space-between;
+}
+.gap-x-1{
+    row-gap: 1rem ;
+}
+.gap-x-2{
+    row-gap: 2rem ;
+}
+.gap-x-3{
+    row-gap: 3rem ;
+}
+.gap-x-4{
+    row-gap: 4rem ;
+}
+.gap-x-5{
+    row-gap: 5rem ;
+}
+.gap-y-1{
+    column-gap: 1rem;
+}
+.gap-y-2{
+    column-gap: 2rem;
+}
+.gap-y-3{
+    column-gap: 3rem;
+}
+.gap-y-4{
+    column-gap: 4rem;
+}
+.gap-y-5{
+    column-gap: 5rem;
+}
+
+
+/* Text & Fonts */
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: end;
+}
+.text-normal{
+    font-size: 1.4rem;
+}
+.text-md{
+    font-size: 2.4rem;
+}
+.text-lg{
+    font-size: 3.4rem;
+}
+.text-inter{
+    font-family: var(--inter);
+    font-weight: 400;
+}
+.text-space{
+    letter-spacing: 1px;
+}
+.line-paragraph{
+    line-height: 1.5rem;
+}
+.font-600{
+    font-weight: 600;
+}
+
+/* Borders */
+.border-none{
+    border: none;
+}
+.border-transparent{
+    border: transparent;
+}
+.border{
+    border: 1px solid var(--persian-green);
+    border-radius: 1rem;
+}
+.border-Cool-gray{
+    border: 1px solid var(--Cool-gray);
+}
+.rounded-1{
+    border-radius: 1rem;
+}
+.rounded-2{
+    border-radius: 2rem;
+}
+
+/* Colors , BackGround image and shadows */
+.bg-blur{
+    backdrop-filter: blur(5px);
+}
+.bg-persian-green{
+    background-color: var(--persian-green);
+}
+.bg-amber{
+    background-color: var(--amber);
+}
+.bg-transparent-black{
+    background-color: var(--transparent-black);
+}
+.bg-white-creamy{
+    background-color: var(--white-creamy);
+}
+.bg-Mint-cream{
+    background-color: var(--Mint-cream);
+}
+.bg-Charcoal-blue{
+    background-color: var(--Charcoal-blue);
+}
+.bg-Cool-gray{
+    background-color: var(--Cool-gray);
+}
+.bg-white{
+    background-color: white;
+}
+.bg-transparent{
+    background-color: transparent;
+}
+.text-white{
+    color: var(--white);
+}
+.text-gray{
+    color: var(--gray);
+}
+.lime-green{
+    color: var(--lime-green);
+}
+.text-persian-green{
+    color: var(--persian-green);
+}
+.text-cool-gray{
+    color: var(--Cool-gray);
+}
+.shadow{
+    box-shadow: 0px 0px 10px 0px  rgb(228, 228, 228);
+}
+header{
+    background-image: url('../public/images/solar-panels-meadow 1.png');
+    background-size: cover;
+    min-height: 100vh;
+}
+.power-section{
+    background-image: url('../public/images/8116 1.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+}
+.Repairs-section{
+    background-image: url('../public/images/8116 1 (1).png');
+    background-size: cover;
+    min-height: 80vh;
+}
+.link-hover:hover{
+    color: blue;
+    cursor: default;
+}
+.link-hover{
+    transition: all;
+    transition-duration: 0.5s;
+}

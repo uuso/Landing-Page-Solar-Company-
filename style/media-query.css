@@ -1,0 +1,73 @@
+/* Media Query Break Points based Tailwindcss Screens */
+
+/* sm */
+@media (min-width:640px){
+    .w-sm-50{
+        width: 50%;
+    }
+    .w-sm-48{
+        width: 48%;
+    }
+    /* .flex-sm-row{
+        flex-direction: row;
+    } */
+}
+/* md */
+@media (min-width:768px){
+   .w-md-10r{
+       width: 10rem;
+    }
+    .w-md-60{
+        width: 60%;
+    }
+    .w-md-40{
+        width: 40%;
+    }
+}
+/* lg */
+@media (min-width:1024px){
+    .w-lg-auto{
+        width: auto;
+    }
+    .w-lg-70{
+        width: 70%;
+    }
+    .w-lg-65{
+        width: 65%;
+    }
+    .w-lg-60{
+        width: 60%;
+    }
+    .w-lg-50{
+        width: 50%;
+    }
+    .w-lg-40{
+        width: 40%;
+    }
+    .w-lg-33{
+        width: 33.3333333333333333%;
+    }
+    .w-lg-30{
+        width: 30%;
+    }
+    .w-lg-12r{
+        width: 12rem;
+    }
+    .px-lg-3{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .py-lg-3{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .flex-lg-row{
+        flex-direction: row;
+    }
+    .item-lg-center{
+        align-items: center;
+    }
+    .item-self-lg-end{
+        align-self: flex-end;
+    }
+}
